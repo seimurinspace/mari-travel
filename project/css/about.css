@@ -1,0 +1,381 @@
+/* Основные стили */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Герой-секция */
+.hero-section {
+  display: flex;
+  min-height: 70vh;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: #4a6fa5;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.typewriter {
+  font-size: 2rem;
+  color: #555;
+  min-height: 2.5rem;
+  border-right: 2px solid #4a6fa5;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.hero-image {
+  flex: 1;
+  background: url('../img/yosh-about.jpg') center/cover;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.reviews-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 2.5rem;
+  color: #4a6fa5;
+  margin-bottom: 3rem;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.review-text::before {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(74, 111, 165, 0.1);
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  margin: 0;
+  color: #333;
+}
+
+.author-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* История */
+.story-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4a6fa5, #ff5722);
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.opening-text {
+  font-size: 1.5rem;
+  color: #4a6fa5;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.highlight {
+  color: #4a6fa5;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.interactive-text {
+  position: relative;
+  color: #ff5722;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.interactive-text:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 5px 15px rgba(255,87,34,0.3);
+}
+
+/* Статистика */
+.story-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4a6fa5;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Команда */
+.team-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #4a6fa5;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  background-size: cover;
+  border: 3px solid #4a6fa5;
+}
+
+.photo-1 {
+  background-image: url('https://randomuser.me/api/portraits/women/44.jpg');
+}
+
+.photo-2 {
+  background-image: url('https://randomuser.me/api/portraits/men/32.jpg');
+}
+
+.photo-3 {
+  background-image: url('https://randomuser.me/api/portraits/women/68.jpg');
+}
+
+.team-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  color: #ff5722;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Анимации */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #4a6fa5 }
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    min-height: 300px;
+  }
+  
+  .story-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .story-content {
+    font-size: 1rem;
+  }
+  
+  .opening-text {
+    font-size: 1.3rem;
+  }
+}
+.principles-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.principles-section h2 {
+  font-size: 2.5rem;
+  color: #4a6fa5;
+  margin-bottom: 3rem;
+}
+
+.principles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.principle-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.principle-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff5722, #4a6fa5);
+}
+
+.principle-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(74, 111, 165, 0.1);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 0;
+}
+
+.principle-title {
+  font-size: 2.3rem;
+  color: #333;
+  margin: 1.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.principle-description {
+  color: #666;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+}

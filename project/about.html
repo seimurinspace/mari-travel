@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас | Мари Трэвел</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Фиксированная навигация -->
+  <header class="header">
+    <nav class="nav">
+      <a href="contacts.html" class="nav-item">Контакты</a>
+      <a href="#" class="nav-item hot-button">Горячее</a>
+      <a href="index.html" class="logo">Мари Трэвел</a>
+      <a href="about.html" class="nav-item active">О нас</a>
+      <a href="login.html" class="nav-item login-button">Войти</a>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="about-container">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1>Наша философия</h1>
+        <div class="typewriter" id="typewriter"></div>
+      </div>
+      <div class="hero-image" alt="Красивый вид на башню в Йошкар-Оле"></div>
+    </div>
+
+    <div class="story-section">
+      <div class="story-card">
+        <div class="story-content">
+          <p class="opening-text">Привет, мой дорогой читатель.</p>
+          <p>Для нашей команды <span class="highlight">Мари Трэвел</span> - это больше, чем попытка воплотить все культурные и интересные ценности, это то, что сплочает каждого читателя, каждого гостя невообразимой магией путешествий.</p>
+          <p>Мы создаем не просто статьи - мы творим <span class="interactive-text" data-text="окна в другие миры|эмоциональные маршруты|воспоминания будущего">окна в другие миры</span>, где каждая строчка пропитана ароматами далеких стран, а фотографии дарят билет в неизведанное.</p>
+          <p>Наш блог - это компас для тех, кто верит, что настоящая жизнь начинается там, где заканчивается зона комфорта.</p>
+        </div>
+        <div class="story-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="357">0</div>
+            <div class="stat-label">уникальных мест</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">культурных остановок</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="1298">0</div>
+            <div class="stat-label">довольных читателей</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="principles-section">
+        <h2>Наши принципы работы</h2>
+        <div class="principles-container" id="principlesContainer">
+        <!-- Принципы будут добавлены через JS -->
+        </div>
+    </div>    
+    <div class="team-section">
+      <h2>Наши главные проводники</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo photo-1" alt="Фото Марии"></div>
+          <h3>Мария</h3>
+          <p>Главный редактор</p>
+          <div class="team-bio">Превращает впечатления в слова, а слова - в путешествия</div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo photo-2" alt="Фото Алексея"></div>
+          <h3>Алексей</h3>
+          <p>Фотограф</p>
+          <div class="team-bio">Ловит моменты, которые заставляют сердце биться чаще</div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo photo-3" alt="Фото Ирины"></div>
+          <h3>Ирина</h3>
+          <p>Корреспондент</p>
+          <div class="team-bio">Находит истории, которые хочется рассказать всему миру</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<div class="reviews-section">
+  <h2>Отзывы наших читателей</h2>
+  <div class="reviews-container" id="reviewsContainer">
+    <!-- Отзывы будут добавлены через JS -->
+  </div>
+</div>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

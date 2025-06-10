@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт с улучшенным слайдером</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Фиксированная навигация -->
+  <header class="header">
+    <nav class="nav">
+  <a href="contacts.html" class="nav-item">Контакты</a>
+  <a href="#" class="nav-item hot-button">
+    Горячее
+    <span class="fire"></span>
+  </a>
+  <a href="index.html" class="logo">Мари Трэвел</a>
+  <a href="about.html" class="nav-item">О нас</a>
+  <a href="login.html" class="nav-item login-button">Войти</a>
+</nav>
+  </header>
+
+  <!-- Поисковик -->
+  <section class="search-section">
+  <div class="search-container">
+    <input type="text" placeholder="Поиск..." class="search-input" id="searchInput">
+    <button class="search-button" id="searchButton">Найти</button>
+  </div>
+</section>
+
+  <!-- Слайдер с описанием -->
+  <section class="slider-section">
+    <div class="slider">
+      <!-- Слайд 1 -->
+      <div class="slide active">
+        <img src="img/dost.jpg" alt="Марий Чодра">
+        <div class="slide-info">
+          <h3>Воздух, пропитанный историей</h3>
+          <p>Узнайте больше о том, что всегда хотели знать</p>
+        </div>
+        <a href="#new" class="slide-link">Узнать</a>
+      </div>
+      
+      <!-- Слайд 2 -->
+      <div class="slide">
+        <img src="img/mari.jpg" alt="Башня среди поля">
+        <div class="slide-info">
+          <h3>Эксклюзив!</h3>
+          <p>Бескрайние долины по нашей республике.</p>
+        </div>
+        <a href="#exclusive" class="slide-link">Подробнее</a>
+      </div>
+      
+      <!-- Слайд 3 -->
+      <div class="slide">
+        <img src="img/obl.jpg" alt="Йошкар-Ола (1)">
+        <div class="slide-info">
+          <h3>Я люблю Йошкар-Олу</h3>
+          <p>Что же такого в нашем городе?</p>
+        </div>
+        <a href="#delivery" class="slide-link">Ну и что?</a>
+      </div>
+      <div class="slide">
+        <img src="img/yosh.png" alt="Йошкар-Ола (2)">
+        <div class="slide-info">
+          <h3>Йошкар-Ола</h3>
+          <p>Центр того, чего нигде не увидишь</p>
+        </div>
+        <a href="#delivery" class="slide-link">Что же?</a>
+      </div>
+      <div class="slide">
+        <img src="img/ozero.jpg" alt="Морской глаз">
+        <div class="slide-info">
+          <h3>Морской глаз</h3>
+          <p>Озеро, от которого идут мурашки</p>
+        </div>
+        <a href="#delivery" class="slide-link">Узнать</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Последняя запись -->
+  <section class="latest-post">
+    <div class="post-container">
+      <h2>Последние новости</h2>
+      <div class="post-content">
+        <h3>Запуск нового сервиса</h3>
+        <p>Теперь можно Зарегистрироваться у нас на портале и обсуждать с другими гостями важные вещи.</p>
+        <a href="#" class="read-more">Читать далее →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Информационный Блог.<br>Зверева Антонина Павловна</p>
+    </div>
+  </footer>
+  <aside style="align-items: center;">
+    Все пропорции и ваши пожелания были учтены. Приятного провождения в нашем "мире"!
+  </aside>
+  <script src="js/script.js"></script>
+  <div class="overlay" id="searchOverlay"></div>
+</body>
+</html>
